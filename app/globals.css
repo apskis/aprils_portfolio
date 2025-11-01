@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Custom Portfolio Colors */
+    --ivory: 216 217 208;
+    --black: 17 20 16;
+    --desert-sun: 209 140 48;
+    --tiffany-blue: 40 151 176;
+    
+    /* Shadcn UI Variables with Custom Colors */
+    --background: 216 217 208;
+    --foreground: 17 20 16;
+    --card: 255 255 255;
+    --card-foreground: 17 20 16;
+    --popover: 255 255 255;
+    --popover-foreground: 17 20 16;
+    --primary: 209 140 48;
+    --primary-foreground: 255 255 255;
+    --secondary: 40 151 176;
+    --secondary-foreground: 255 255 255;
+    --muted: 245 245 244;
+    --muted-foreground: 115 115 115;
+    --accent: 40 151 176;
+    --accent-foreground: 255 255 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 229 229 227;
+    --input: 229 229 227;
+    --ring: 40 151 176;
+    --radius: 0.5rem;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
   font-family: Arial, Helvetica, sans-serif;
 }
