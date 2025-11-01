@@ -76,7 +76,7 @@ const Contact = () => {
               href={info.link}
               className="block"
             >
-              <Card className="text-center transition-all hover:shadow-lg hover:scale-[1.02]">
+              <Card className="text-center border-0 shadow-polished transition-all hover:shadow-xl hover:scale-[1.02]">
                 <CardContent className="pt-6">
                   <div className="text-4xl mb-3">{info.icon}</div>
                   <h3 className="font-semibold text-foreground mb-1">{info.label}</h3>
@@ -89,7 +89,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <Card>
+          <Card className="border-0 shadow-polished">
             <CardHeader>
               <CardTitle className="text-2xl">Send a Message</CardTitle>
             </CardHeader>
@@ -162,7 +162,7 @@ const Contact = () => {
 
           {/* Additional Info */}
           <div className="space-y-6">
-            <Card>
+            <Card className="border-0 shadow-polished">
               <CardHeader>
                 <CardTitle className="text-2xl">Response Time</CardTitle>
               </CardHeader>
@@ -178,7 +178,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-0 shadow-polished">
               <CardHeader>
                 <CardTitle className="text-2xl">Collaboration</CardTitle>
               </CardHeader>
@@ -208,7 +208,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-secondary/5 border-secondary/20">
+            <Card className="bg-secondary/5 border-2 border-secondary/20 shadow-polished">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold text-foreground mb-3">💡 Quick Tip</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">

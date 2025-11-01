@@ -7,7 +7,7 @@ const About = () => {
       <Navigation />
 
       <div className="mx-auto max-w-4xl px-6 py-12">
-        <Card>
+        <Card className="border-0 shadow-polished">
           <CardHeader>
             <CardTitle className="text-4xl">About Me</CardTitle>
           </CardHeader>
@@ -46,22 +46,22 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
-              <Card className="border-secondary/20">
+              <Card className="border-2 border-secondary/20 shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
                 <CardContent className="p-6">
                   <h3 className="font-bold text-foreground mb-2">📚 Education</h3>
-                  <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                  <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
                 </CardContent>
               </Card>
-              <Card className="border-primary/20">
+              <Card className="border-2 border-primary/20 shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
                 <CardContent className="p-6">
                   <h3 className="font-bold text-foreground mb-2">💼 Products</h3>
-                  <p className="text-sm">Sed do eiusmod tempor incididunt ut labore</p>
+                  <p className="text-sm text-muted-foreground">Sed do eiusmod tempor incididunt ut labore</p>
                 </CardContent>
               </Card>
-              <Card className="border-secondary/20">
+              <Card className="border-2 border-secondary/20 shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
                 <CardContent className="p-6">
                   <h3 className="font-bold text-foreground mb-2">🎯 Consulting</h3>
-                  <p className="text-sm">Et dolore magna aliqua ut enim ad minim</p>
+                  <p className="text-sm text-muted-foreground">Et dolore magna aliqua ut enim ad minim</p>
                 </CardContent>
               </Card>
             </div>

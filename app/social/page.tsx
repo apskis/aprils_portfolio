@@ -44,7 +44,7 @@ const Social = () => {
       <Navigation />
 
       <div className="mx-auto max-w-5xl px-6 py-12">
-        <Card className="mb-8 text-center">
+        <Card className="mb-8 text-center border-0 shadow-polished">
           <CardHeader>
             <CardTitle className="text-4xl">Connect With Me</CardTitle>
             <CardDescription className="text-base max-w-2xl mx-auto pt-2">
@@ -58,7 +58,7 @@ const Social = () => {
           {socialPlatforms.map((platform) => (
             <Card
               key={platform.name}
-              className="hover:shadow-lg transition-all hover:scale-[1.02] border-l-4 hover:border-l-primary"
+              className="border-0 shadow-polished hover:shadow-xl transition-all hover:scale-[1.02] border-l-4 hover:border-l-primary"
             >
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -78,7 +78,7 @@ const Social = () => {
           ))}
         </div>
 
-        <Card className="text-center">
+        <Card className="text-center border-0 shadow-polished">
           <CardHeader>
             <CardTitle className="text-2xl">Newsletter</CardTitle>
             <CardDescription className="text-base">

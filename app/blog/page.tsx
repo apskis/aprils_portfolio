@@ -48,7 +48,7 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blogPosts.map((post) => (
-            <Card key={post.id} className="hover:shadow-lg transition-all hover:scale-[1.02]">
+            <Card key={post.id} className="border-0 shadow-polished hover:shadow-xl transition-all hover:scale-[1.02]">
               <CardHeader>
                 <div className="mb-3 flex items-center gap-3">
                   <span className="rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">

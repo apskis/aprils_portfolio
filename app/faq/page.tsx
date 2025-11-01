@@ -50,7 +50,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        <Card>
+        <Card className="border-0 shadow-polished">
           <CardContent className="p-6">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
@@ -67,7 +67,7 @@ const FAQ = () => {
           </CardContent>
         </Card>
 
-        <Card className="mt-8 text-center">
+        <Card className="mt-8 text-center border-0 shadow-polished">
           <CardHeader>
             <CardTitle className="text-2xl">Still Have Questions?</CardTitle>
             <CardDescription className="text-base">

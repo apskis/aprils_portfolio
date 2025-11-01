@@ -18,7 +18,7 @@ const Navigation = () => {
   ];
 
   return (
-    <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-border/50 bg-card/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/">
           <h1 className="text-2xl font-bold text-primary transition-colors hover:text-primary/80 cursor-pointer">
@@ -33,7 +33,7 @@ const Navigation = () => {
                 variant={pathname === link.href ? "default" : "ghost"}
                 size="sm"
                 className={cn(
-                  pathname === link.href && "bg-secondary hover:bg-secondary/90"
+                  pathname === link.href && "bg-secondary hover:bg-secondary/90 shadow-md"
                 )}
               >
                 <Link href={link.href}>{link.label}</Link>

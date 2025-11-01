@@ -1,14 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  /* Custom Portfolio Colors - Registered for Tailwind Use */
+  --color-ivory: #D8D9D0;
+  --color-black: #111410;
+  --color-desert-sun: #D18C30;
+  --color-tiffany-blue: #2897B0;
+  
+  /* Shadcn UI Color Tokens - RGB format for CSS variable usage */
+  --color-background: #D8D9D0;
+  --color-foreground: #111410;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #111410;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #111410;
+  --color-primary: #D18C30;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #2897B0;
+  --color-secondary-foreground: #FFFFFF;
+  --color-muted: #F5F5F4;
+  --color-muted-foreground: #737373;
+  --color-accent: #2897B0;
+  --color-accent-foreground: #FFFFFF;
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+  --color-border: #E5E5E3;
+  --color-input: #E5E5E3;
+  --color-ring: #2897B0;
+  --radius: 0.5rem;
+}
+
 @layer base {
   :root {
-    /* Custom Portfolio Colors */
-    --ivory: 216 217 208;
-    --black: 17 20 16;
-    --desert-sun: 209 140 48;
-    --tiffany-blue: 40 151 176;
-    
-    /* Shadcn UI Variables with Custom Colors */
+    /* CSS Variables for Shadcn Components (RGB format) */
     --background: 216 217 208;
     --foreground: 17 20 16;
     --card: 255 255 255;
@@ -28,7 +52,17 @@
     --border: 229 229 227;
     --input: 229 229 227;
     --ring: 40 151 176;
-    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  /* Enhanced shadow utilities for polished cards */
+  .shadow-soft {
+    box-shadow: 0 2px 8px rgba(17, 20, 16, 0.08), 0 1px 3px rgba(17, 20, 16, 0.05);
+  }
+  
+  .shadow-polished {
+    box-shadow: 0 4px 12px rgba(17, 20, 16, 0.1), 0 2px 4px rgba(17, 20, 16, 0.06);
   }
 }
 
